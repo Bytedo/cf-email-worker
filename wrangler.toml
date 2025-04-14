@@ -1,0 +1,17 @@
+name = "cf-email-worker"      # worker项目名称
+main = "src/index.js"
+
+[vars]
+# API 配置 (以onebot v11 为例)
+API_BASE_URL = "https://exmlple.com/send_private_msg"
+API_ACCESS_TOKEN = "123456" # access_token
+API_USER_ID = "123456"      # user_id 或 group_id, 群聊需将 index.js 第127行改为 group_id
+
+# R2 存储域名需手动填写，可用官方分配或自己绑定的
+R2_CUSTOM_DOMAIN_URL = "https://*.r2.dev"
+
+# R2 存储桶配置
+[[r2_buckets]]
+binding = "R2_BUCKET"         # Worker中用来操作R2的对象名，可忽略
+bucket_name = "wremail"       # 填写R2存储桶名称
+preview_bucket_name = "wremail-dev" #开发测试用的，可忽略
