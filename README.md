@@ -1,7 +1,7 @@
 # Cloudflare 邮件转发 Worker
 
 这个项目是一个基于 Cloudflare Workers 的邮件处理转发项目，主要功能是接收邮件并将邮件内容转发到指定的 API。
-项目中的 API 使用的是 napcat 的接口，主要用于转发邮件内容到 QQ，其他 API 可用根据情况进行修改。
+项目中的 API 使用的是 napcat 的接口，主要用于转发邮件内容到 onebot v11 接口，其他 API 可用根据情况进行修改。
 
 ## 主要功能
 
